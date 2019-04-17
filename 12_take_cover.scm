@@ -1,11 +1,5 @@
 ; Chapter 12 Take Cover
 ;
-; define atom? from chapter 02
-;
-(define atom?
-  (lambda (l)
-    (and (not (pair? l)) (not (null? l)))))
-;
 ; define sub1 from chapter 04, we will use it later.
 ;
 (define sub1

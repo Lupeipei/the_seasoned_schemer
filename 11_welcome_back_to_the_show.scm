@@ -1,11 +1,5 @@
 ; Chapter 11 Welcome back to the show
 ;
-; define atom? from chapter 02
-;
-(define atom?
-  (lambda (l)
-    (and (not (pair? l)) (not (null? l)))))
-;
 ; define member? from chapter 02
 ;
 (define member?
