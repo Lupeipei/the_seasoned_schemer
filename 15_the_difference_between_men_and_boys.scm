@@ -178,4 +178,9 @@
 (put-food)
 ;Value: pecanpie
 
+; --------------------------------------------------------------------------------.
+; ; the Eighteenth commandment                                                   ;
+; ; Use (set! ...) only when the value that x refers to is no longer needed.     ;
+; ---------------------------------------------------------------------------------.
+
 ; great! time for lunch.
