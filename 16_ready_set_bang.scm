@@ -324,32 +324,19 @@
 ;
 (define length
   (let ((h (lambda (l) 0)))
-    (lambda (l)
-      (set! h
-        (lambda (l)
-          (cond
-            ((null? l) 0)
-            (else (add1 (h (cdr l)))))))
-      h)))
-;
-; exmaples of this length.
-
-; Y combinator from chapter 09, old friends.
-;
-(define Y
-  (lambda (le)
-    ((lambda (f)
-      (f f))
-      (lambda (f)
-        (le (lambda (x)
-              ((f f) x)))))))
+    (set! h
+      (lambda (l)
+        (cond
+          ((null? l) 0)
+          (else (add1 (h (cdr l)))))))
+    h))
 ;
 ; examples of this length
 ;
-((Y length) (quote (1)))
+(length (quote (1)))
 ;Value: 1
 
-((Y length) (quote (1 2 3)))
+(length (quote (1 2 3)))
 ; Value: 3
 
 ; --------------------------------------------------------------------------------.
@@ -407,10 +394,23 @@
 ;Value: 3
 
 ; we can also define length with Y
+
+; Y combinator from chapter 09, old friends.
+;
+(define Y
+  (lambda (le)
+    ((lambda (f)
+      (f f))
+      (lambda (f)
+        (le (lambda (x)
+              ((f f) x)))))))
+;
+
 (define length (Y L))
 
 (length (quote (1 2 3)))
 ;Value: 3
+;
 
 ; define D
 ;
@@ -464,6 +464,9 @@
 ((Yi biz) 5)
 ; no answer
 
+((Y-bang biz) 5)
+; no answer
+
 ; we know the x in (Yi biz) will always be 1. so ((Y biz) 1) must be equal ((Yi biz) 1), which is 0.
 ((Y biz) 1)
 ;Value: 0
@@ -471,11 +474,13 @@
 ((Yi biz) 1)
 ;Value: 0
 
+((Y-bang biz) 1)
+;Value: 0
+
 ; we can change biz so that ((Yi biz) 5) will have value.
 
 ; redefine biz
 ;
-
 (define biz
   (lambda (f)
     (let ((x 0))
@@ -488,6 +493,9 @@
 ; examples of biz
 
 ((Yi biz) 5)
+;Value: 0
+
+((Y-bang biz) 5)
 ;Value: 0
 
 ; enjoy!
