@@ -141,7 +141,7 @@
             (cons x
               (quote ())))))))
 ;
-; exmaples of glutton
+; examples of glutton
 ;
 (glutton (quote garlic))
 ;Value : (more garlic more garlic)

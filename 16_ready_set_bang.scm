@@ -194,7 +194,7 @@
               (else (A (cdr ns) (cdr rs)))))))
         (A Ns Rs))))
 ;
-; exmaples of find
+; examples of find
 ;
 (find 3 Ns Rs)
 ;Value : (((pizza)))

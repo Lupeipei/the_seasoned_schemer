@@ -231,7 +231,7 @@
         (S 1000)
         (counter))))
 ;
-; exmaples of supercounter
+; examples of supercounter
 ;
 (supercounter deep)
 ;Value: 500512
