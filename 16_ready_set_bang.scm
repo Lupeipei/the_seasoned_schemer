@@ -271,7 +271,7 @@
 ((lambda () Ns))
 ;Value : (9 8 7 6 5 3)
 
-; refefine find so when Ns and Rs is empty list.
+; redefine find so when Ns and Rs is empty list.
 ;
 (define find
   (lambda (n Ns Rs)
