@@ -138,7 +138,7 @@
 ; Value : ((swedish rye) (french (mustard turkey) salad))
 
 (rember1* (quote meat) (quote ((pasta meat) pasta (noodles meat sauce) meat tomatoes)))
-;Value : ((pasta) pasta (noodles meat sauce) meat tomatoes)
+;Value: ((pasta) pasta (noodles meat sauce) meat tomatoes)
 
 
 ; fixed rember1* using the Twelfth commandment
@@ -166,7 +166,7 @@
 ; examples of rember1* with retcc
 ;
 (rember1* (quote meat) (quote ((pasta meat) pasta (noodles meat sauce) meat tomatoes)))
-;Value : ((pasta) pasta (noodles meat sauce) meat tomatoes)
+;Value: ((pasta) pasta (noodles meat sauce) meat tomatoes)
 
 ; using let with rember1*
 ;
@@ -335,7 +335,7 @@
 ;
 ; examples
 (scramble (quote (1 2 3 4 5 6 7 8 9)))
-;Value : (1 1 1 1 1 1 1 1 1)
+;Value: (1 1 1 1 1 1 1 1 1)
 
 ;
 ; redefine leftmost with letcc
@@ -448,7 +448,7 @@
 ; examples of rember1* with letcc
 ;
 (rember1* (quote meat) (quote ((pasta meat) pasta (noodles meat sauce) meat tomatoes)))
-;Value : ((pasta) pasta (noodles meat sauce) meat tomatoes)
+;Value: ((pasta) pasta (noodles meat sauce) meat tomatoes)
 
 ; hide rm
 ;
@@ -480,7 +480,7 @@
 ; examples of rember1* with letcc
 ;
 (rember1* (quote meat) (quote ((pasta meat) pasta (noodles meat sauce) meat tomatoes)))
-;Value : ((pasta) pasta (noodles meat sauce) meat tomatoes)
+;Value: ((pasta) pasta (noodles meat sauce) meat tomatoes)
 
 ; scheme not working with try
 ; the following codes do not work.

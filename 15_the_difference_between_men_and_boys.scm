@@ -44,10 +44,10 @@
 ; examples of gourmand
 ;
 (gourmand (quote potato))
-;Value : (potato potato)
+;Value: (potato potato)
 
 (gourmand (quote rice))
-;Value : (rice rice)
+;Value: (rice rice)
 
 ; define diner
 ;
@@ -70,7 +70,7 @@
 ; Value : (milkshake onion)
 
 (dinerR (quote pecanpie))
-;Value : (milkshake pecanpie)
+;Value: (milkshake pecanpie)
 
 ; define omnivore
 ;
@@ -104,7 +104,7 @@
 ; examples of gobbler
 ;
 (gobbler (quote gumbo))
-;Value : (gumbo gumbo)
+;Value: (gumbo gumbo)
 
 ; define nibbler
 ;
@@ -144,7 +144,7 @@
 ; examples of glutton
 ;
 (glutton (quote garlic))
-;Value : (more garlic more garlic)
+;Value: (more garlic more garlic)
 
 ; define chez-nous
 ;

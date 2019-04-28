@@ -98,10 +98,10 @@
 ; examples of sum-of-prefixes
 ;
 (sum-of-prefixes (quote (2 1 9 17 0)))
-;Value : (2 3 12 29 29)
+;Value: (2 3 12 29 29)
 
 (sum-of-prefixes (quote (1 1 1 1 1)))
-;Value : (1 2 3 4 5)
+;Value: (1 2 3 4 5)
 
 ; --------------------------------------------------------------------------------.
 ; ; the eleventh commandment                                                      ;
@@ -144,10 +144,10 @@
 ; examples of scramble
 ;
 (scramble (quote (1 1 1 3 4 2 1 1 9 2)))
-;Value : (1 1 1 1 1 4 1 1 1 9)
+;Value: (1 1 1 1 1 4 1 1 1 9)
 
 (scramble (quote (1 2 3 4 5 6 7 8 9)))
-;Value : (1 1 1 1 1 1 1 1 1)
+;Value: (1 1 1 1 1 1 1 1 1)
 
 (scramble (quote (1 2 3 1 2 3 4 1 8 2 10)))
-;Value : (1 1 1 1 1 1 1 1 2 8 2)
+;Value: (1 1 1 1 1 1 1 1 2 8 2)

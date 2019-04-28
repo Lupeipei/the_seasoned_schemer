@@ -45,13 +45,13 @@
 ; examples of lots
 ;
 (lots 3)
-;Value : (egg egg egg)
+;Value: (egg egg egg)
 
 (lots 5)
-;Value : (egg egg egg egg egg)
+;Value: (egg egg egg egg egg)
 
 (lots 12)
-;Value : (egg egg egg egg egg egg egg egg egg egg egg egg)
+;Value: (egg egg egg egg egg egg egg egg egg egg egg egg)
 
 ; define lenkth
 ;
@@ -84,7 +84,7 @@
 ; examples of add-at-end
 ;
 (add-at-end (lots 3))
-;Value : (egg egg egg egg)
+;Value: (egg egg egg egg)
 
 (counter)
 ;Value: 3
@@ -107,7 +107,7 @@
 ; examples of add-at-end
 ;
 (add-at-end-too (lots 3))
-;Value : (egg egg egg egg)
+;Value: (egg egg egg egg)
 
 (counter)
 ;Value: 0
@@ -135,7 +135,7 @@
 ;
 ; examples of kons
 ((kons (quote egg) (quote ())) cons)
-;Value : (egg)
+;Value: (egg)
 
 ;
 ; define bons
@@ -167,7 +167,7 @@
   (lambda (c x)
     ((c (lambda (s a d) s)) x)))
 ;
-; redefine kons with set-kdr adn bons
+; redefine kons with set-kdr and bons
 ;
 (define kons
   (lambda (a d)
@@ -179,7 +179,7 @@
 ;Value: a
 
 (kdr (kons (quote a) (quote (1 2 3))))
-;Value : (1 2 3)
+;Value: (1 2 3)
 
 ; redefine lots with consC.
 ;
@@ -218,7 +218,7 @@
 (define dozen (lots 12))
 
 ((lambda () dozen))
-;Value : (egg egg egg egg egg egg egg egg egg egg egg egg)
+;Value: (egg egg egg egg egg egg egg egg egg egg egg egg)
 
 (counter)
 ;Value: 12
@@ -229,7 +229,7 @@
 (define bakers-dozen (add-at-end dozen))
 ;
 ((lambda () bakers-dozen))
-;Value : (egg egg egg egg egg egg egg egg egg egg egg egg egg)
+;Value: (egg egg egg egg egg egg egg egg egg egg egg egg egg)
 
 (counter)
 ;Value: 25
@@ -240,7 +240,7 @@
   (add-at-end-too dozen))
 ;
 ((lambda () bakers-dozen-too))
-;Value : (egg egg egg egg egg egg egg egg egg egg egg egg egg)
+;Value: (egg egg egg egg egg egg egg egg egg egg egg egg egg)
 ;
 (counter)
 ;Value: 26
@@ -307,7 +307,7 @@
 ; examples of last-kons
 ;
 (last-kons (quote (hello scheme)))
-;Value : (scheme)
+;Value: (scheme)
 
 (define long (lots 12))
 

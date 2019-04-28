@@ -47,10 +47,10 @@
 ; examples of sweet-tooth
 ;
 (sweet-tooth (quote chocolate))
-;Value : (chocolate cake)
+;Value: (chocolate cake)
 
 (sweet-tooth (quote fruit))
-;Value : (fruit cake)
+;Value: (fruit cake)
 
 ((lambda () last))
 ;Value: angelfood
@@ -65,13 +65,13 @@
         (quote ())))))
 ;
 (sweet-toothL (quote chocolate))
-;Value : (chocolate cake)
+;Value: (chocolate cake)
 
 ((lambda () last))
 ;Value: chocolate
 
 (sweet-toothL (quote fruit))
-;Value : (fruit cake)
+;Value: (fruit cake)
 
 ((lambda () last))
 ;Value: fruit
@@ -80,7 +80,7 @@
 ; Value : (cheese cake)
 
 (sweet-toothL (quote carrot))
-;Value : (carrot cake)
+;Value: (carrot cake)
 
 ; using ingredients to track all the ingredients that went into sweet-toothL
 (define ingredients (quote ()))
@@ -100,25 +100,25 @@
 ; Value : (chocolate cake)
 
 ((lambda () ingredients))
-;Value : (chocolate)
+;Value: (chocolate)
 
 (sweet-toothR (quote fruit))
-;Value : (fruit cake)
+;Value: (fruit cake)
 
 ((lambda () ingredients))
-;Value : (fruit chocolate)
+;Value: (fruit chocolate)
 
 (sweet-toothR (quote cheese))
-;Value : (cheese cake)
+;Value: (cheese cake)
 
 ((lambda () ingredients))
-;Value : (cheese fruit chocolate)
+;Value: (cheese fruit chocolate)
 
 (sweet-toothR (quote carrot))
-;Value : (carrot cake)
+;Value: (carrot cake)
 
 ((lambda () ingredients))
-;Value : (carrot cheese fruit chocolate)
+;Value: (carrot cheese fruit chocolate)
 
 ; define deep
 ;
@@ -131,10 +131,10 @@
 ; examples of deep
 ;
 (deep 3)
-;Value : (((pizza)))
+;Value: (((pizza)))
 
 (deep 7)
-;Value : (((((((pizza)))))))
+;Value: (((((((pizza)))))))
 
 (deep 0)
 ;Value: pizza
@@ -156,26 +156,26 @@
 ; examples of deepR
 ;
 (deepR 3)
-;Value : (((pizza)))
+;Value: (((pizza)))
 
 (deepR 5)
-;Value : (((((pizza)))))
+;Value: (((((pizza)))))
 
 ((lambda () Rs))
-;Value : ((((((pizza))))) (((pizza))))
+;Value: ((((((pizza))))) (((pizza))))
 
 ((lambda () Ns))
-;Value : (5 3)
+;Value: (5 3)
 
 (deepR 3)
-;Value : (((pizza)))
+;Value: (((pizza)))
 
 
 ((lambda () Rs))
-;Value : ((((pizza))) (((((pizza))))) (((pizza))))
+;Value: ((((pizza))) (((((pizza))))) (((pizza))))
 
 ((lambda () Ns))
-;Value : (3 5 3)
+;Value: (3 5 3)
 
 ; --------------------------------------------------------------------------------.
 ; ; the Nineteenth commandment                                                   ;
@@ -197,7 +197,7 @@
 ; examples of find
 ;
 (find 3 Ns Rs)
-;Value : (((pizza)))
+;Value: (((pizza)))
 
 ; define deepM
 ;
@@ -212,10 +212,10 @@
 (set! Rs (cdr Rs))
 
 ((lambda () Rs))
-;Value : ((((((pizza))))) (((pizza))))
+;Value: ((((((pizza))))) (((pizza))))
 
 ((lambda () Ns))
-;Value : (5 3)
+;Value: (5 3)
 
 ; redefine deepM with deepR
 ;
@@ -229,7 +229,7 @@
           result))))
 ;
 (deepM 6)
-;Value : ((((((pizza))))))
+;Value: ((((((pizza))))))
 ;
 
 ; redefine deep with deepM
@@ -241,10 +241,10 @@
       (else (cons (deepM (sub1 m)) (quote ()))))))
 ;
 (deepM 9)
-;Value : (((((((((pizza)))))))))
+;Value: (((((((((pizza)))))))))
 
 ((lambda () Ns))
-;Value : (9 8 7 6 5 3)
+;Value: (9 8 7 6 5 3)
 
 ; redefine deepM to obey the Sixteenth commandment
 ;
@@ -262,14 +262,14 @@
 ; examples of deepM
 ;
 (deepM 16)
-;Value : ((((((((((((((((pizza))))))))))))))))
+;Value: ((((((((((((((((pizza))))))))))))))))
 
 ; we know the Rs, Ns in deepM changed, but Rs, Ns outside deepM haven't changed
 ((lambda () Rs))
-;Value : ((((((((((pizza))))))))) ((((((((pizza)))))))) (((((((pizza))))))) ((((((pizza)))))) (((((pizza))))) (((pizza))))
+;Value: ((((((((((pizza))))))))) ((((((((pizza)))))))) (((((((pizza))))))) ((((((pizza)))))) (((((pizza))))) (((pizza))))
 
 ((lambda () Ns))
-;Value : (9 8 7 6 5 3)
+;Value: (9 8 7 6 5 3)
 
 ; redefine find so when Ns and Rs is empty list.
 ;
@@ -300,7 +300,7 @@
 ; examples of deepM
 ;
 (deepM 2)
-;Value : ((pizza))
+;Value: ((pizza))
 
 ; need a cup of Coke.
 ; we meet length again.

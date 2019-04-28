@@ -88,7 +88,7 @@
 ; examples of deepM
 ;
 (deepM 2)
-;Value : ((pizza))
+;Value: ((pizza))
 
 ; replace (D (sub1 m)) with (deepM (sub1 m)), and using (let ....) to simplify again.
 ;
@@ -130,7 +130,7 @@
 ; examples of deepM
 ;
 (deepM 2)
-;Value : ((pizza))
+;Value: ((pizza))
 
 ; replace ((lambda (m) ....) n) with (let ((m n)) (lambda ....))
 ;
@@ -171,7 +171,7 @@
 ; examples of deepM
 ;
 (deepM 2)
-;Value : ((pizza))
+;Value: ((pizza))
 ;
 ; define consC to count the times on using cons.
 ;
@@ -206,13 +206,13 @@
       (cons x y))))
 ;
 (deep 5)
-;Value : (((((pizza)))))
+;Value: (((((pizza)))))
 
 (counter)
-;Value : 5
+;Value: 5
 
 (deep 7)
-;Value : (((((((pizza)))))))
+;Value: (((((((pizza)))))))
 
 (counter)
 ;Value: 12
@@ -281,7 +281,7 @@
 ;
 
 (deepM 5)
-;Value : (((((pizza)))))
+;Value: (((((pizza)))))
 
 (counter)
 ;Value: 500505
@@ -289,7 +289,7 @@
 (set-counter 0)
 
 (deepM 5)
-;Value : (((((pizza)))))
+;Value: (((((pizza)))))
 
 ; cause we already have (((((pizza))))) in Rs, so the counter is zero.
 ;
@@ -297,13 +297,13 @@
 ;Value: 0
 
 (deepM 6)
-;Value : ((((((pizza))))))
+;Value: ((((((pizza))))))
 
 (counter)
 ;Value: 1
 
 (deep 7)
-;Value : (((((((pizza)))))))
+;Value: (((((((pizza)))))))
 
 (counter)
 ;Value: 8
@@ -404,7 +404,7 @@
 ; examples of rember1*
 ;
 (rember1* (quote noodles) (quote ((food) more (food))))
-;Value : ((food) more (food))
+;Value: ((food) more (food))
 
 (counter)
 ;Value: 0
@@ -450,7 +450,7 @@
 ; examples of rember1*C2
 ;
 (rember1*C2 (quote noodles) (quote ((food) more (food))))
-;Value : ((food) more (food))
+;Value: ((food) more (food))
 
 (counter)
 ;Value: 5

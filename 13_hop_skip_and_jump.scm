@@ -31,7 +31,7 @@
 ;
 ; test
 (intersect (quote (tomatoes and macaroni)) (quote (macaroni and cheese)))
-;Value : (and macaroni)
+;Value: (and macaroni)
 
 ;
 ; define intersectall from chapter 07
@@ -45,7 +45,7 @@
 ; examples of intersectall
 ;
 (intersectall (quote ((6 pears and) (3 peaches and 6 peppers) (8 pears and 6 plums) (and 6 prunes with some apples))))
-;Value : (6 and)
+;Value: (6 and)
 
 ; redefine intersectall with letrec
 ;
@@ -63,13 +63,13 @@
 ; examples of intersectall
 ;
 (intersectall (quote ((3 mangoes and) (3 kiwis and) (3 hamburgers))))
-;Value : (3)
+;Value: (3)
 
 (intersectall (quote ((3 steaks and) (no food and) (three baked potatoes) (3 diet hamburgers))))
-;Value : ()
+;Value: ()
 
 (intersectall (quote ((3 mangoes and) () (3 diet hamburgers))))
-;Value : ()
+;Value: ()
 
 ; redefine intersectall with letcc
 
@@ -91,7 +91,7 @@
 ;
 ; test
 (intersectall (quote ((3 steaks and) (no food and) (three baked potatoes) (3 diet hamburgers))))
-;Value : ()
+;Value: ()
 
 ; --------------------------------------------------------------------------------.
 ; ; the Fourteen commandment                                                      ;
@@ -140,7 +140,7 @@
 ;
 ; test
 (intersectall (quote ((3 steaks and) (no food and) (three baked potatoes) (3 diet hamburgers))))
-;Value : ()
+;Value: ()
 
 ; rewrite rember with letrec
 ;
@@ -178,7 +178,7 @@
           others
           rice)))
 ;
-;Value : (noodles spaghetti spatzle bean-thread)
+;Value: (noodles spaghetti spatzle bean-thread)
 ;
 (rember-beyond-first
   (quote others)
@@ -189,7 +189,7 @@
           others
           rice)))
 ;
-;Value : (noodles spaghetti spatzle bean-thread roots potatoes yam)
+;Value: (noodles spaghetti spatzle bean-thread roots potatoes yam)
 ;
 (rember-beyond-first
   (quote sweetthing)
@@ -200,7 +200,7 @@
           others
           rice)))
 ;
-;Value : (noodles spaghetti spatzle bean-thread roots potatoes yam others rice)
+;Value: (noodles spaghetti spatzle bean-thread roots potatoes yam others rice)
 ;
 (rember-beyond-first
   (quote desserts)
@@ -215,7 +215,7 @@
           gingerbreadman chocolate
           chip brownies)))
 ;
-;Value : (cookies chocolate mints caramel delight ginger snaps)
+;Value: (cookies chocolate mints caramel delight ginger snaps)
 ;
 ; define rember-upto-last
 ;
@@ -242,7 +242,7 @@
           others
           rice)))
 ;
-;Value : (potatoes yam others rice)
+;Value: (potatoes yam others rice)
 ;
 (rember-upto-last
   (quote sweetthing)
@@ -253,7 +253,7 @@
           others
           rice)))
 ;
-;Value : (noodles spaghetti spatzle bean-thread roots potatoes yam others rice)
+;Value: (noodles spaghetti spatzle bean-thread roots potatoes yam others rice)
 ;
 (rember-upto-last
   (quote cookies)
@@ -268,4 +268,4 @@
           gingerbreadman chocolate
           chip brownies)))
 ;
-;Value : (gingerbreadman chocolate chip brownies)
+;Value: (gingerbreadman chocolate chip brownies)

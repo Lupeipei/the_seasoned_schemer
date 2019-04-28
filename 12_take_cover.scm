@@ -49,7 +49,7 @@
 ; examples of multirember
 ;
 (multirember (quote tuna) (quote (shrimp salad tuna salad and tuna)))
-;Value : (shrimp salad salad and)
+;Value: (shrimp salad salad and)
 
 ; using letrec to define multirember
 ;
@@ -70,7 +70,7 @@
 ; examples of multirember
 ;
 (multirember (quote tuna) (quote (shrimp salad tuna salad and tuna)))
-;Value : (shrimp salad salad and)
+;Value: (shrimp salad salad and)
 
 ; define multirember again
 ;
@@ -90,7 +90,7 @@
 ; examples of multirember
 ;
 (multirember (quote tuna) (quote (shrimp salad tuna salad and tuna)))
-;Value : (shrimp salad salad and)
+;Value: (shrimp salad salad and)
 
 ; --------------------------------------------------------------------------------.
 ; ; the Twelfth commandment                                                      ;
@@ -154,7 +154,7 @@
 ; examples of multirember
 ;
 (multirember (quote salad) (quote (shrimp salad tuna salad and tuna)))
-;Value : (shrimp tuna and tuna)
+;Value: (shrimp tuna and tuna)
 
 ; replace mr with multirember
 ;
@@ -239,7 +239,7 @@
 ; examples of union
 ;
 (union (quote (tomatoes and macaroni casserole)) (quote (macaroni and cheese)))
-;Value : (tomatoes casserole macaroni and cheese)
+;Value: (tomatoes casserole macaroni and cheese)
 
 ;
 ; using letrec to rewrite union
@@ -258,7 +258,7 @@
 ; examples of union
 ;
 (union (quote (tomatoes and macaroni casserole)) (quote (macaroni and cheese)))
-;Value : (tomatoes casserole macaroni and cheese)
+;Value: (tomatoes casserole macaroni and cheese)
 
 ; define member? in union
 ;
@@ -281,7 +281,7 @@
 ; examples of union
 ;
 (union (quote (tomatoes and macaroni casserole)) (quote (macaroni and cheese)))
-;Value : (tomatoes casserole macaroni and cheese)
+;Value: (tomatoes casserole macaroni and cheese)
 
 
 ; --------------------------------------------------------------------------------.
@@ -413,7 +413,7 @@
 ;
 ; test
 (sum-of-prefixes (quote (2 1 9 17 0)))
-;Value : (2 3 12 29 29)
+;Value: (2 3 12 29 29)
 
 ;
 ; alternative
@@ -431,7 +431,7 @@
 ;
 ; test
 (sum-of-prefixes (quote (2 1 9 17 0)))
-;Value : (2 3 12 29 29)
+;Value: (2 3 12 29 29)
 
 ;
 ; define scramble  from chapter 11
@@ -465,7 +465,7 @@
 ;
 ; test
 (scramble (quote (1 2 3 4 5 6 7 8 9)))
-;Value : (1 1 1 1 1 1 1 1 1)
+;Value: (1 1 1 1 1 1 1 1 1)
 
 ; alternative
 ;
@@ -482,4 +482,4 @@
 ;
 ; test
 (scramble (quote (1 2 3 4 5 6 7 8 9)))
-;Value : (1 1 1 1 1 1 1 1 1)
+;Value: (1 1 1 1 1 1 1 1 1)
