@@ -88,7 +88,7 @@
 
 ; --------------------------------------------------------------------------------.
 ; ; the Sixteenth commandment                                                     ;
-; ; Use (set! ...) only with names defined in (let...)s                           ;
+; ; Use (set! ...) only with names defined in (let...)s.                          ;
 ; ---------------------------------------------------------------------------------.
 ;
 ; define gobbler, just like omnivore except the function name

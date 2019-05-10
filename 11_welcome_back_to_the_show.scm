@@ -106,7 +106,7 @@
 ; --------------------------------------------------------------------------------.
 ; ; the eleventh commandment                                                      ;
 ; ; Use additional arguments when a function needs to know what other arguments   ;
-; ; to the function have been like so far                                         ;
+; ; to the function have been like so far.                                        ;
 ; ---------------------------------------------------------------------------------.
 
 ;

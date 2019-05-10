@@ -95,7 +95,7 @@
 ; --------------------------------------------------------------------------------.
 ; ; the Twelfth commandment                                                      ;
 ; ; Use (letrec ...) to remove arguments that do not change for recursive        ;
-; ; applications                                                                 ;
+; ; applications.                                                                ;
 ; ---------------------------------------------------------------------------------.
 ;
 
@@ -285,7 +285,7 @@
 
 
 ; --------------------------------------------------------------------------------.
-; ; the Thirteen commandment                                                      ;
+; ; the Thirteenth commandment                                                      ;
 ; ; Use (letrec ...) to hide and to protect functions.                            ;
 ; ---------------------------------------------------------------------------------.
 
